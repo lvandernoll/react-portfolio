@@ -1,0 +1,12 @@
+//Breakpoints
+@mixin forPhone {
+	@media (max-width: 639px) { @content; }
+}
+
+@mixin forTablet {
+	@media (min-width: 640px) and (max-width: 1023px) { @content; }
+}
+
+@mixin forBoth {
+	@media (max-width: 1023px) { @content; }
+}
