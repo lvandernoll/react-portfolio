@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Page from '../Page';
 
-export default class Homepage extends Component {
+export default class Subpage extends Component {
 	render () {
 		return (
 			<Page>
-				XD
-				<Link to='/jan'>JAN</Link>
+				subpage
+				<Link to='/'>back</Link>
 			</Page>
 		);
 	}

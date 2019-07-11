@@ -13,6 +13,13 @@ const CSSLOADER = {
 	}
 }
 
+const CSSLOADER_NOHASH = {
+	loader: 'css-loader',
+	options: {
+		sourceMap: true,
+	}
+}
+
 const SASSRESOURCES = {
 	loader: 'sass-resources-loader',
 	options: {
@@ -29,12 +36,17 @@ module.exports = {
 	},
 	module: {
 		rules: [{
-			test: /\.(scss|css)$/,
+			test: /\.(scss)$/,
 			use: [
 			'style-loader',
 			CSSLOADER,
 			'sass-loader',
 			SASSRESOURCES
+		]}, {
+			test: /\.(css)$/,
+			use: [
+			'style-loader',
+			CSSLOADER_NOHASH,
 		]}, {
 			test: /\.(js|jsx)$/,
 			exclude: /node_modules/,

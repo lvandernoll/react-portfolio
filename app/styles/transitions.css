@@ -1,0 +1,27 @@
+.page-enter-done {
+	background-color: lightblue;
+}
+
+.page-enter {
+	transform: translate(-100%, 0);
+}
+
+.page-enter-active {
+	transform: translate(0, 0);
+}
+
+.page-exit {
+	transform: translate(-100%, 0);
+}
+
+.page--prev.page-enter {
+	transform: translate(100%, 0);
+}
+
+.page--prev.page-enter-active {
+	transform: translate(0, 0);
+}
+
+.page--prev.page-exit {
+	transform: translate(100%, 0);
+}

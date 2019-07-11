@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Homepage from './routes/homepage';
+import Subpage from './routes/subpage';
 
+import './styles/transitions.css';
 import 'normalize.css';
 import 'reset-css';
 import './images/favicon.ico';
@@ -9,10 +12,28 @@ import './images/favicon.ico';
 export default class App extends Component {
 	render () {
 		return (
-			<Switch>
-				<Route exact path='/' component={Homepage} />
-				<Route exact path='/jan' component={Homepage} />
-			</Switch>
+			<Route render={({ location }) => {
+				const { pathname } = location;
+				return (
+					<TransitionGroup>
+						<CSSTransition
+						key={pathname}
+						classNames='page'
+						timeout={{
+							enter: 1000,
+							exit: 1000,
+						}}>
+							<Route location={location} render={() => (
+								<Switch>
+									<Route exact path='/' component={Homepage} />
+									<Route path='/jan' component={Subpage} />
+									<Route component={Homepage} /> // 404
+								</Switch>
+							)}/>
+						</CSSTransition>
+					</TransitionGroup>
+				);
+			}}/>
 		);
 	}
 }

@@ -27,6 +27,7 @@
     "npm": "^6.9.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-transition-group": "^4.2.1",
     "reset-css": "^4.0.1"
   },
   "devDependencies": {
