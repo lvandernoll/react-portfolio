@@ -1,9 +1,17 @@
 .page {
+	color: white;
 	height: 100vh;
-	padding: calc(15% + 1.5em) 5% 5%;
 	overflow-y: auto;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	transition: transform 1s ease-in-out;
+}
+
+.left {
+	position: fixed;
+	z-index: -1;
+	height: 100vh;
+	width: 56.25%;
+	background-color: black;
 }
