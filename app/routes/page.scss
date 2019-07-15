@@ -5,7 +5,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in-out, opacity .5s ease-out;
 }
 
 .left {
@@ -13,5 +13,38 @@
 	z-index: -1;
 	height: 100vh;
 	width: 56.25%;
-	background-color: black;
+	background-color: $black;
+	transition: opacity 1s ease-in-out;
+}
+
+.image {
+	height: 100%;
+	width: 91%;
+	position: absolute;
+	opacity: .24;
+	filter: grayscale(1);
+	object-fit: cover;
+	object-position: 0 -50px;
+	transform: scale(1.2);
+}
+
+.dots {
+	$width: 200px;
+	$dotWidth: 10%;
+	width: $width;
+	height: 100%;
+	position: absolute;
+	background: transparent;
+	background-size: 29px 29px;
+	background-position: 0 0, 15px 15px;
+
+	&Left {
+		left: calc(100% - #{$width});
+		background-image: radial-gradient(rgba($white, .15) $dotWidth, transparent 0);
+	}
+
+	&Right {
+		left: 100%;
+		background-image: radial-gradient(rgba($black, .15) $dotWidth, transparent 0);
+	}
 }
