@@ -1,18 +1,19 @@
 .page {
-	color: white;
+	display: flex;
+	color: $white;
 	height: 100vh;
 	overflow-y: auto;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	transition: transform 1s ease-in-out, opacity .5s ease-out;
+	transition: transform 1s ease-in-out, opacity .5s ease-in-out;
 }
 
 .left {
 	position: fixed;
 	z-index: -1;
 	height: 100vh;
-	width: 56.25%;
+	width: $leftWidth;;
 	background-color: $black;
 	transition: opacity 1s ease-in-out;
 }
@@ -30,7 +31,7 @@
 
 .dots {
 	$width: 200px;
-	$dotWidth: 10%;
+	$dotWidth: 9%;
 	width: $width;
 	height: 100%;
 	position: absolute;

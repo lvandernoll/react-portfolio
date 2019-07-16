@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import styles from './page.scss';
 import ReactTransitionGroup from 'react-transition-group';
 export default class Page extends Component {
-	componentWillLeave() {
-		console.log('exit');
-	}
 	render () {
 		return (
 			<>

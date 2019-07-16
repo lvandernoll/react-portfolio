@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Homepage from './routes/homepage';
-import Subpage from './routes/subpage';
+import ProjectOverview from './routes/projectOverview';
 
 import './styles/transitions.css';
 import 'normalize.css';
@@ -26,7 +26,7 @@ export default class App extends Component {
 							<Route location={location} render={() => (
 								<Switch>
 									<Route exact path='/' component={Homepage} />
-									<Route path='/jan' component={Subpage} />
+									<Route path='/projects' component={ProjectOverview} />
 									<Route component={Homepage} /> // 404
 								</Switch>
 							)}/>

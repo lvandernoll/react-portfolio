@@ -1,31 +1,32 @@
-.page-enter-done {
-	/* TODO */
-}
-
 .page-enter {
-	transform: translate(-100%, 0);
-}
-
-.page-enter ~ div {
-	opacity: 1;
-}
-
-.page-enter-active {
-	transform: translate(0, 0);
-}
-
-.page-exit, .page-exit ~ div {
 	opacity: 0;
 }
 
-.page--prev.page-enter {
-	transform: translate(100%, 0);
+.page-enter-active, .page-enter-active ~ div {
+	opacity: 1;
 }
 
-.page--prev.page-enter-active {
+.page-exit-active, .page-exit-active ~ div {
+	opacity: 0;
+}
+
+
+.page-enter > #transformLeft {
+	transform: translate(-100%, 0);
+}
+
+.page-enter-active > #transformLeft {
 	transform: translate(0, 0);
 }
 
-.page--prev.page-exit {
+.page--prev.page-enter > #transformLeft {
+	transform: translate(100%, 0);
+}
+
+.page--prev.page-enter-active > #transformLeft {
+	transform: translate(0, 0);
+}
+
+.page--prev.page-exit > #transformRight {
 	transform: translate(100%, 0);
 }

@@ -1,5 +1,219 @@
-// Typographies
-@mixin TODO {
-	font-family: 'TODO', sans-serif;
+@mixin HeadingMainLargeWhite {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 56px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin HeadingMainLargeBlack {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 56px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
 	line-height: normal;
+	letter-spacing: normal;
+	color: $black;
+}
+
+@mixin HeadingSubLargeGrey {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 48px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	color: $medium-grey;
+}
+
+@mixin HeadingMainMediumWhite {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin HeadingMainMediumBlack {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: $black;
+}
+
+@mixin ProjectLargeWhite {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin HeadingSubSmallGrey {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: $medium-grey;
+}
+
+@mixin HeadingMainSmallWhite {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin HeadingMainSmallBlack {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: $black;
+}
+
+@mixin ProjectSmallWhite {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin BodyParagraphLargeWhite {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.6;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin BodyParagraphLargeBlack {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.6;
+	letter-spacing: normal;
+	color: $black;
+}
+
+@mixin ButtonMediumWhite {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin ButtonMediumBlack {
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: $black;
+}
+
+@mixin BodyParagraphRegularWhite {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin BodyParagraphRegularBlack {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $black;
+}
+
+@mixin BodyParagraphSmallWhite {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin BodyParagraphSmallBlack {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	color: $black;
+}
+
+@mixin BodyParagraphVerySmallWhite {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $white;
+}
+
+@mixin BodyParagraphVerySmallBlack {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: $black;
 }
