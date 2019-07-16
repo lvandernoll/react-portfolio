@@ -26,7 +26,7 @@ export default class App extends Component {
 							<Route location={location} render={() => (
 								<Switch>
 									<Route exact path='/' component={Homepage} />
-									<Route path='/projects' component={ProjectOverview} />
+									<Route exact path='/projects' component={ProjectOverview} />
 									<Route component={Homepage} /> // 404
 								</Switch>
 							)}/>
