@@ -7,29 +7,6 @@ import image from '../../images/DSC02681.jpg';
 import styles from './homepage.scss';
 
 export default class Homepage extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			showScrollArrow: true,
-		};
-	}
-
-	componentDidMount() {
-		this.refs.right.addEventListener('scroll', this.checkScrollHeight);
-		window.addEventListener('resize', this.checkScrollHeight);
-		this.checkScrollHeight();
-	}
-
-	checkScrollHeight = () => {
-		const scrollTop = this.refs.right.scrollTop;
-		const scrollHeight = this.refs.right.scrollHeight;
-		const offsetHeight = this.refs.right.offsetHeight;
-		if(scrollHeight - offsetHeight === scrollTop && window.innerHeight === offsetHeight
-		|| window.innerHeight > 1320) {
-			if(this.state.showScrollArrow) this.setState({showScrollArrow: false});
-		} else if(!this.state.showScrollArrow) this.setState({showScrollArrow: true});
-	}
-
 	render () {
 		return (
 			<Page image={image}>
@@ -65,7 +42,7 @@ export default class Homepage extends Component {
 						<Project title={'An incredibly short project title'} img={image}/>
 					</section>
 					<FontAwesomeIcon icon={'chevron-down'} onClick={e => this.refs.projectsButton.scrollIntoView({behavior: 'smooth'})}
-						className={`${styles.scrollArrow} ${this.state.showScrollArrow ? styles.scrollArrowVisible : ''}`} />
+						className={styles.scrollArrow} />
 					<div ref='projectsButton' className={styles.buttonWrapper}>
 						<button className={styles.button} >View all projects</button>
 					</div>

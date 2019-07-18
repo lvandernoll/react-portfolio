@@ -23,14 +23,10 @@
 	width: 16px !important;
 	padding: 12px;
 	position: fixed;
-	bottom: -40px;
 	align-self: center;
 	cursor: pointer;
 	transition: bottom .5s;
-
-	&Visible {
-		bottom: 16px;
-	}
+	bottom: 16px;
 }
 
 .header, .paragraph {
