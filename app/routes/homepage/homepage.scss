@@ -1,72 +1,96 @@
 .left {
-    width: $leftWidth;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    transition: 1s all ease-in-out;
-    overflow-y: hidden;
+	width: $leftWidth;
+	height: 100vh;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	transition: 1s all ease-in-out;
+	overflow-y: hidden;
 }
 
 .right {
-    height: 2000px;
-    padding-left: $leftWidth;
-    width: calc(100% - #{$leftWidth});
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    transition: 1s opacity ease-in-out;
-    overflow-y: auto;
+	padding-left: $leftWidth;
+	width: calc(100% - #{$leftWidth});
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	transition: 1s opacity ease-in-out;
+	overflow-y: auto;
+}
+
+.scrollArrow {
+	height: 16px;
+	width: 16px !important;
+	padding: 12px;
+	position: fixed;
+	align-self: center;
+	cursor: pointer;
+	transition: bottom .5s;
+	bottom: 16px;
 }
 
 .header, .paragraph {
-    max-width: 400px;
-    margin: 0 10%;
+	max-width: 400px;
+	margin: 0 10%;
 }
 
 .header {
-    @include HeadingMainLargeWhite;
-    margin-top: 10%;
-    margin-bottom: 6%;
+	@include HeadingMainLargeWhite;
+	margin-top: 7vh;
+	margin-bottom: 6vh;
 }
 
 .paragraph {
-    @include BodyParagraphLargeWhite;
+	@include BodyParagraphLargeWhite;
 
-    &:not(:first-of-type) {
-        margin-top: 3%;
-    }
+	&:not(:first-of-type) {
+		margin-top: 3vh;
+	}
 }
 
 .skills {
-    margin: 8% 13%;
+	margin: 8% 13%;
 }
 
 .skillRow:nth-of-type(1) {
-    margin-left: 4%;
+	margin-left: 4%;
 }
 
 .skillRow:nth-of-type(2) {
-    margin-left: 16%;
+	margin-left: 16%;
 }
 
 .skill {
-    height: 40px;
-    width: 40px;
-    margin: 5%;
-    background-color: lightgrey;
+	height: 40px;
+	width: 40px;
+	margin: 5%;
+	background-color: lightgrey;
 }
 
 
 .projects {
-    margin: 0 13%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    max-width: 440px;
+	margin: 0 13%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	max-width: 440px;
 }
 
 .title {
-    @include HeadingSubLargeGrey;
-    margin-bottom: 5%;
+	@include HeadingSubLargeGrey;
+	margin-bottom: 5%;
+}
+
+.buttonWrapper {
+	text-align: end;
+	margin-bottom: 50px;
+	margin-top: 8px;
+}
+
+.button {
+	border: none;
+	background-color: lightgrey;
+	height: 36px;
+	width: 188px;
+	margin-right: 9%;
 }

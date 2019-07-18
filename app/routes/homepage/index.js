@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Page from '../Page';
+import Project from './components/project';
 import image from '../../images/DSC02681.jpg';
 import styles from './homepage.scss';
 
@@ -17,7 +19,7 @@ export default class Homepage extends Component {
 						Indeed on people do merits to. Court heard which up above hoped grave do. Will answer to living law things either sir bed length.
 					</p>
 				</section>
-				<div className={styles.right}>
+				<div ref='right' className={styles.right}>
 					<section className={styles.skills}>
 						<h2 className={styles.title}>Skills</h2>
 						<div className={styles.skillRow}>
@@ -35,7 +37,15 @@ export default class Homepage extends Component {
 					</section>
 					<section className={styles.projects}>
 						<h2 className={styles.title}>Projects</h2>
+						<Project title={'An incredibly short project title'} img={image}/>
+						<Project title={'An incredibly short project title'} img={image}/>
+						<Project title={'An incredibly short project title'} img={image}/>
 					</section>
+					<FontAwesomeIcon icon={'chevron-down'} onClick={e => this.refs.projectsButton.scrollIntoView({behavior: 'smooth'})}
+						className={styles.scrollArrow} />
+					<div ref='projectsButton' className={styles.buttonWrapper}>
+						<button className={styles.button} >View all projects</button>
+					</div>
 				</div>
 			</Page>
 		);
