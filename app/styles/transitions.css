@@ -12,7 +12,7 @@
 
 
 .page-enter > #transformLeft {
-	transform: translate(-100%, 0);
+	transform: translate(100%, 0);
 }
 
 .page-enter-active > #transformLeft {
@@ -25,8 +25,4 @@
 
 .page--prev.page-enter-active > #transformLeft {
 	transform: translate(0, 0);
-}
-
-.page--prev.page-exit > #transformRight {
-	transform: translate(100%, 0);
 }

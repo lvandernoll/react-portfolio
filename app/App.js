@@ -9,6 +9,11 @@ import 'normalize.css';
 import 'reset-css';
 import './images/favicon.ico';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faChevronDown);
+
 export default class App extends Component {
 	render () {
 		return (
