@@ -18,8 +18,8 @@
 		height: 12px;
 		top: 0;
 		left: 0;
-		border-top-color: black;
-		border-left-color: black;
+		border-top-color: $black;
+		border-left-color: $black;
 	}
 	
 	&::after {
@@ -27,8 +27,8 @@
 		width: 12px;
 		right: 0;
 		bottom: 0;
-		border-bottom-color: black;
-		border-right-color: black;
+		border-bottom-color: $black;
+		border-right-color: $black;
 	}
 
 	&:hover::before, &:hover::after {
@@ -43,7 +43,6 @@
 .content {
 	height: 100%;
 	width: 100%;
-	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -56,7 +55,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-color: black;
+		background-color: $black;
 		transition: .3s ease-in-out width;
 	}
 
