@@ -11,7 +11,7 @@ export default class Button extends Component {
 
 	render () {
 		return (
-			<Link to='/projects' className={styles.buttonWrapper} onClick={this.onClick}>
+			<Link to='/projects' className={styles.button} onClick={this.onClick}>
 				<div className={styles.content} ref='content'>
 					<span className={styles.text} ref='text'>
 						{this.props.children}
