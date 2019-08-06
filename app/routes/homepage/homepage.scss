@@ -82,15 +82,8 @@
 }
 
 .buttonWrapper {
-	text-align: end;
+	display: flex;
+	justify-content: flex-end;
 	margin-bottom: 50px;
 	margin-top: 8px;
-}
-
-.button {
-	border: none;
-	background-color: lightgrey;
-	height: 36px;
-	width: 188px;
-	margin-right: 9%;
 }
