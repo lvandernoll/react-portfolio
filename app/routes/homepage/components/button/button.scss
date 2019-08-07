@@ -60,7 +60,7 @@
 		transition: .3s ease-in-out width;
 	}
 
-	&Clicked::before {
+	&Clicked::before, &:active::before {
 		width: 100%;
 	}
 }
@@ -70,7 +70,7 @@
 	transition: .3s ease-in-out color;
 	z-index: 1;
 
-	&Clicked {
+	&Clicked, &:active {
 		@include ButtonMediumWhite;
 	}
 }

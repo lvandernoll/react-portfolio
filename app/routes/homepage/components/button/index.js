@@ -4,7 +4,6 @@ import styles from './button.scss';
 
 export default class Button extends Component {
 	onClick = () => {
-		console.log('click');
 		this.refs.content.classList.add(styles.contentClicked);
 		this.refs.text.classList.add(styles.textClicked);
 	}
