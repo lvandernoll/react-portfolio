@@ -11,6 +11,10 @@
 		content: '';
 		position: absolute;
 		border: 2px solid transparent;
+
+		transition:
+			width .3s ease-out,
+			height .3s ease-out;
 	}
 
 	&::before {
@@ -21,7 +25,7 @@
 		border-top-color: $black;
 		border-left-color: $black;
 	}
-	
+
 	&::after {
 		height: 12px;
 		width: 12px;
@@ -32,9 +36,6 @@
 	}
 
 	&:hover::before, &:hover::after {
-		transition:
-			width .3s ease-out,
-			height .3s ease-out;
 		width: 100%;
 		height: 100%;
 	}
