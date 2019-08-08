@@ -76,6 +76,11 @@
 	max-width: 440px;
 }
 
+.project {
+	width: 97%;
+	margin-bottom: 24px;
+}
+
 .title {
 	@include HeadingSubLargeGrey;
 	margin-bottom: 5%;

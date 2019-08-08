@@ -1,0 +1,41 @@
+.navigation {
+	margin-top: 5.6%;
+	margin-left: 72px;
+	width: 100%;
+	height: fit-content;
+}
+
+.button {
+	height: 40px;
+	width: 40px;
+	border: none;
+	padding: 0;
+}
+
+.header {
+	@include HeadingMainLargeWhite;
+	margin-top: 3%;
+	width: 400px;
+}
+
+.projects {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: -144px 0 12.6% 38%;
+}
+
+.project {
+	width: 78%;
+
+	$projects: 4;
+	@for $i from 0 through $projects {
+		&:nth-child(#{$i + 1}) {
+			z-index: #{$projects - $i};
+		}
+	}
+
+	&:nth-child(even) {
+		margin: -10% 0 -10% -132%;
+	}
+}

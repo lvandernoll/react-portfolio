@@ -1,7 +1,6 @@
 .project {
 	position: relative;
-	width: 97%;
-	margin-bottom: 24px;
+	min-height: fit-content;
 
 	&::before {
 		background-image: linear-gradient(to bottom, rgba($black, .24), $black);
