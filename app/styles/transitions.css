@@ -10,19 +10,31 @@
 	opacity: 0;
 }
 
+#transformLeft, #transformRight {
+	transition: 1s transform ease-in-out;
+}
 
-.page-enter > #transformLeft {
+.page-enter #transformLeft {
 	transform: translate(-100%, 0);
 }
 
-.page-enter-active > #transformLeft {
+.page-enter-active #transformLeft {
 	transform: translate(0, 0);
 }
 
-.page--prev.page-enter > #transformLeft {
+.page--prev.page-enter #transformLeft {
 	transform: translate(100%, 0);
 }
 
-.page--prev.page-enter-active > #transformLeft {
+.page--prev.page-enter-active #transformLeft {
+	transform: translate(0, 0);
+}
+
+
+.page-enter #transformRight {
+	transform: translate(100%, 0);
+}
+
+.page-enter-active #transformRight {
 	transform: translate(0, 0);
 }

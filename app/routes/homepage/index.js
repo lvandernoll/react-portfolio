@@ -37,9 +37,9 @@ export default class Homepage extends Component {
 					</section>
 					<section className={styles.projects}>
 						<h2 className={styles.title}>Projects</h2>
-						<Project className={styles.project} title={'An incredibly short project title'} img={image} id={1}/>
-						<Project className={styles.project} title={'An incredibly short project title'} img={image} id={2}/>
-						<Project className={styles.project} title={'An incredibly short project title'} img={image} id={3}/>
+						<Project className={styles.project} title={'An incredibly short project title'} img={image} index={1}/>
+						<Project className={styles.project} title={'An incredibly short project title'} img={image} index={2}/>
+						<Project className={styles.project} title={'An incredibly short project title'} img={image} index={3}/>
 					</section>
 					<FontAwesomeIcon icon={'chevron-down'} onClick={e => this.refs.projectsButton.scrollIntoView({behavior: 'smooth'})}
 						className={styles.scrollArrow} />

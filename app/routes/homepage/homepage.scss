@@ -27,6 +27,7 @@
 	cursor: pointer;
 	transition: bottom .5s;
 	bottom: 16px;
+	z-index: 2;
 }
 
 .header, .paragraph {

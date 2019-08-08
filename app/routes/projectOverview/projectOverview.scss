@@ -1,15 +1,14 @@
-.navigation {
+.wrapper {
 	margin-top: 5.6%;
-	margin-left: 72px;
+	padding-left: 72px;
 	width: 100%;
 	height: fit-content;
+	overflow-y: hidden;
 }
 
 .button {
-	height: 40px;
 	width: 40px;
-	border: none;
-	padding: 0;
+	height: 40px;
 }
 
 .header {

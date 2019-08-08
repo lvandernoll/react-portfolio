@@ -1,0 +1,22 @@
+
+.icon {
+	color: $white;
+	height: 16px;
+	width: 16px !important;
+
+	&Wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		transition: .3s background-color ease-out;
+
+		&:hover {
+			background-color: rgba($white, .08);
+		}
+
+		&Clicked, &:active {
+			background-color: rgba($white, .24);
+		}
+	}
+}

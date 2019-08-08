@@ -10,9 +10,9 @@ import 'reset-css';
 import './images/favicon.ico';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faChevronDown);
+library.add(faChevronDown, faArrowLeft);
 
 export default class App extends Component {
 	render () {
@@ -25,7 +25,7 @@ export default class App extends Component {
 						key={pathname}
 						classNames='page'
 						timeout={{
-							enter: 1000,
+							enter: 1500,
 							exit: 1000,
 						}}>
 							<Route location={location} render={() => (
