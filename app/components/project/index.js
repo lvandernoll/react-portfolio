@@ -23,7 +23,7 @@ export default class Project extends Component {
 						<img className={styles.projectImage} src={this.props.img} />
 						<div className={styles.projectInfo}>
 							<h3 className={styles.projectTitle}>{this.props.title}</h3>
-							<p className={styles.projectDescription}>Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you.</p>
+							<p className={styles.projectDescription}>{this.props.description}</p>
 						</div>
 					</Link>)
 				break;

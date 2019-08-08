@@ -5,8 +5,22 @@ import Project from '../../components/project';
 import Button from './components/button';
 import image from '../../images/DSC02681.jpg';
 import styles from './homepage.scss';
+import projectData from '../../data/projects';
 
 export default class Homepage extends Component {
+	constructor(props) {
+		super(props);
+		let projects = [];
+		for(let i = 0; i < 3; i++) {
+			if(projectData.length >= i + 1) {
+				projects.push(
+					<Project className={styles.project} type='small'
+						title={projectData[i].title} img={projectData[i].image} index={projectData[i].id} key={i}/>
+				);
+			}
+		}
+		this.state = {projects};
+	}
 	render () {
 		return (
 			<Page image={image}>
@@ -37,9 +51,7 @@ export default class Homepage extends Component {
 					</section>
 					<section className={styles.projects}>
 						<h2 className={styles.title}>Projects</h2>
-						<Project className={styles.project} type='small' title={'An incredibly short project title'} img={image} index={1}/>
-						<Project className={styles.project} type='small' title={'An incredibly short project title'} img={image} index={2}/>
-						<Project className={styles.project} type='small' title={'An incredibly short project title'} img={image} index={3}/>
+						{this.state.projects}
 					</section>
 					<FontAwesomeIcon icon={'chevron-down'} onClick={e => this.refs.projectsButton.scrollIntoView({behavior: 'smooth'})}
 						className={styles.scrollArrow} />
