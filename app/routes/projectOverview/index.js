@@ -14,10 +14,10 @@ export default class ProjectOverview extends Component {
 					<Icon className={styles.button} icon={'arrow-left'} />
 					<h2 className={styles.header}>Projects overview</h2>
 					<div className={styles.projects}>
-						<Project id='transformRight' className={styles.project} title={'An incredibly short project title'} img={image} index={1}/>
-						<Project id='transformLeft' className={styles.project} title={'An incredibly short project title'} img={image} index={2}/>
-						<Project id='transformRight' className={styles.project} title={'An incredibly short project title'} img={image} index={3}/>
-						<Project id='transformLeft' className={styles.project} title={'An incredibly short project title'} img={image} index={4}/>
+						<Project id='transformRight' className={styles.project} type='large' title={'An incredibly short project title'} img={image} index={1}/>
+						<Project id='transformLeft' className={styles.project} type='large' title={'An incredibly short project title'} img={image} index={2}/>
+						<Project id='transformRight' className={styles.project} type='large' title={'An incredibly short project title'} img={image} index={3}/>
+						<Project id='transformLeft' className={styles.project} type='large' title={'An incredibly short project title'} img={image} index={4}/>
 					</div>
 				</div>
 			</Page>
