@@ -2,6 +2,22 @@
 	position: relative;
 	min-height: fit-content;
 
+	&Header {
+		position: relative;
+		min-height: fit-content;
+
+		&::after {
+			background-image: linear-gradient(to bottom, rgba($black, .24), $black);
+			content: '';
+			opacity: .24;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
 	&::before {
 		background-image: linear-gradient(to bottom, rgba($black, .24), $black);
 		transition: opacity .3s ease-out;
@@ -36,6 +52,8 @@
 
 	&Image {
 		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	&Info {

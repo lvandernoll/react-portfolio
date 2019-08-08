@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Homepage from './routes/homepage';
 import ProjectOverview from './routes/projectOverview';
+import ProjectDetail from './routes/projectDetail';
 
 import './styles/transitions.css';
 import 'normalize.css';
@@ -10,9 +11,9 @@ import 'reset-css';
 import './images/favicon.ico';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronDown, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faArrowLeft, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faChevronDown, faArrowLeft);
+library.add(faChevronDown, faArrowLeft, faTimes);
 
 export default class App extends Component {
 	render () {
@@ -32,6 +33,7 @@ export default class App extends Component {
 								<Switch>
 									<Route exact path='/' component={Homepage} />
 									<Route exact path='/projects' component={ProjectOverview} />
+									<Route path='/projects/:id' component={ProjectDetail} />
 									<Route component={Homepage} /> // 404
 								</Switch>
 							)}/>

@@ -25,10 +25,13 @@ export default class Project extends Component {
 							<h3 className={styles.projectTitle}>{this.props.title}</h3>
 							<p className={styles.projectDescription}>{this.props.description}</p>
 						</div>
-					</Link>)
+					</Link>);
 				break;
 			default:
-				project = (<></>) // HEADER TYPE HERE
+				project = (
+					<div className={`${styles.projectHeader} ${this.props.className}`}>
+						<img className={styles.projectImage} src={this.props.img} />
+					</div>);
 		}
 		return project;
 	}
