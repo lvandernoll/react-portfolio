@@ -37,16 +37,16 @@ export default class Homepage extends Component {
 					<section className={styles.skills}>
 						<h2 className={styles.title}>Skills</h2>
 						<div className={styles.skillRow}>
-							<img className={styles.skill} />
-							<img className={styles.skill} />
-							<img className={styles.skill} />
-							<img className={styles.skill} />
+							<FontAwesomeIcon icon={['fab', 'php']} className={styles.skill} />
+							<FontAwesomeIcon icon={['fab', 'laravel']} className={styles.skill} />
+							<FontAwesomeIcon icon={['fab', 'python']} className={styles.skill} />
+							<FontAwesomeIcon icon={['fab', 'js-square']} className={styles.skill} />
 						</div>
 						<div className={styles.skillRow}>
-							<img className={styles.skill} />
-							<img className={styles.skill} />
-							<img className={styles.skill} />
-							<img className={styles.skill} />
+							<FontAwesomeIcon icon={['fab', 'react']} className={styles.skill} />
+							<FontAwesomeIcon icon={['fab', 'vuejs']} className={styles.skill} />
+							<FontAwesomeIcon icon={['fab', 'html5']} className={styles.skill} />
+							<FontAwesomeIcon icon={['fab', 'css3-alt']} className={styles.skill} />
 						</div>
 					</section>
 					<section className={styles.projects}>

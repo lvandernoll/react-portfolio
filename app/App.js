@@ -12,8 +12,10 @@ import './images/favicon.ico';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronDown, faArrowLeft, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faLaravel, faPhp, faJsSquare, faReact, faPython, faVuejs, faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faChevronDown, faArrowLeft, faTimes);
+library.add(faChevronDown, faArrowLeft, faTimes,
+	faLaravel, faPhp, faJsSquare, faReact, faPython, faVuejs, faHtml5, faCss3Alt);
 
 export default class App extends Component {
 	render () {

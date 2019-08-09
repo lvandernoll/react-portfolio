@@ -10,7 +10,7 @@ export default [
 			'python',
 			'php',
 			'laravel',
-			'javascript',
+			'js-square',
 		],
 	},
 	{
@@ -19,10 +19,10 @@ export default [
 		description: 'Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you.',
 		image: 'http://placeimg.com/1200/576/tech',
 		skills: [
-			'python',
-			'php',
-			'laravel',
-			'javascript',
+			'html5',
+			'css3-alt',
+			'react',
+			'vuejs',
 		],
 	},
 	{
@@ -34,7 +34,7 @@ export default [
 			'python',
 			'php',
 			'laravel',
-			'javascript',
+			'js-square',
 		],
 	},
 	{
@@ -43,10 +43,10 @@ export default [
 		description: 'Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you.',
 		image: 'http://placeimg.com/1200/800/tech',
 		skills: [
-			'python',
-			'php',
-			'laravel',
-			'javascript',
+			'html5',
+			'css3-alt',
+			'react',
+			'vuejs',
 		],
 	},
 ];
