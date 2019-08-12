@@ -10,8 +10,9 @@ export default class Icon extends Component {
 
 	render () {
 		return (
-			<Link to={''} onClick={e => {this.onClick(e)}} className={`${styles.iconWrapper} ${this.props.className}`}>
-				<FontAwesomeIcon icon={this.props.icon} className={styles.icon}/>
+			<Link to={this.props.to} onClick={e => {this.onClick(e)}}
+				className={`${styles.iconWrapper} ${this.props.black ? styles.iconWrapperBlack : ''} ${this.props.className}`}>
+				<FontAwesomeIcon icon={this.props.icon} className={`${styles.icon} ${this.props.black ? styles.iconBlack : ''}`}/>
 			</Link>
 		);
 	}

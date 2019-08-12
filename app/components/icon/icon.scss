@@ -4,6 +4,10 @@
 	height: 16px;
 	width: 16px !important;
 
+	&Black {
+		color: $black;
+	}
+
 	&Wrapper {
 		display: flex;
 		justify-content: center;
@@ -17,6 +21,16 @@
 
 		&Clicked, &:active {
 			background-color: rgba($white, .24);
+		}
+
+		&Black {
+			&:hover {
+				background-color: rgba($black, .08);
+			}
+
+			&Clicked, &:active {
+				background-color: rgba($black, .24);
+			}
 		}
 	}
 }

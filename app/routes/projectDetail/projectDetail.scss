@@ -53,3 +53,34 @@
 	@include BodyParagraphRegularWhite;
 	margin-left: 20px;
 }
+
+.navigation {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+	align-self: flex-end;
+	margin: auto 6.2% 3% auto;
+
+	&Text {
+		@include NavigationSmallGrey;
+		text-align: center;
+		height: fit-content;
+		margin-right: 40px;
+	}
+
+	&Arrow {
+		height: 48px;
+		width: 48px;
+		padding: 0 2.5px;
+
+		&:nth-last-child(1) {
+			margin-left: 5%;
+		}
+
+		& > svg {
+			color: $black;
+			width: 19px !important;
+			height: 19px;
+		}
+	}
+}
