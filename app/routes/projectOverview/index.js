@@ -23,7 +23,7 @@ export default class ProjectOverview extends Component {
 		return (
 			<Page>
 				<div className={styles.wrapper}>
-					<Icon className={styles.button} icon={'arrow-left'} />
+					<Icon to='' className={styles.button} icon={'arrow-left'} />
 					<h2 className={styles.header}>Projects overview</h2>
 					<div className={styles.projects}>
 						{this.state.projects}
